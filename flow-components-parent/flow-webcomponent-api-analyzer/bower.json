@@ -39,13 +39,13 @@
     "paper-tabs": "2.0.0",
     "paper-toolbar": "2.0.0",
     "paper-tooltip": "2.0.0",
-    "vaadin-text-field": "1.1.0-beta1",
+    "vaadin-text-field": "1.1.0",
     "vaadin-button": "1.0.4",
-    "vaadin-checkbox": "1.0.0-beta1",
-    "vaadin-combo-box": "3.0.0-beta1",
+    "vaadin-checkbox": "1.0.0",
+    "vaadin-combo-box": "3.0.0",
     "vaadin-form-layout": "1.0.3",
-    "vaadin-split-layout": "3.0.0-beta1",
+    "vaadin-split-layout": "3.0.0",
     "vaadin-date-picker": "2.0.5",
-    "vaadin-dialog": "1.0.0-beta1"
+    "vaadin-dialog": "1.0.0"
   }
 }

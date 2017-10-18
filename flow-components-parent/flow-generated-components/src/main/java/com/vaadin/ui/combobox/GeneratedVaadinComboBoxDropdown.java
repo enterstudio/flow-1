@@ -1,12 +1,12 @@
 /*
  * Copyright 2000-2017 Vaadin Ltd.
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
  * the License at
- * 
+ *
  * http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
@@ -15,19 +15,21 @@
  */
 package com.vaadin.ui.combobox;
 
-import com.vaadin.ui.Component;
-import com.vaadin.ui.common.ComponentSupplier;
-import com.vaadin.ui.common.HasStyle;
 import javax.annotation.Generated;
+
+import com.vaadin.shared.Registration;
+import com.vaadin.ui.Component;
 import com.vaadin.ui.Tag;
+import com.vaadin.ui.common.ComponentSupplier;
+import com.vaadin.ui.common.HasComponents;
+import com.vaadin.ui.common.HasStyle;
 import com.vaadin.ui.common.HtmlImport;
-import com.vaadin.ui.event.Synchronize;
-import elemental.json.JsonObject;
-import com.vaadin.ui.event.DomEvent;
 import com.vaadin.ui.event.ComponentEvent;
 import com.vaadin.ui.event.ComponentEventListener;
-import com.vaadin.shared.Registration;
-import com.vaadin.ui.common.HasComponents;
+import com.vaadin.ui.event.DomEvent;
+import com.vaadin.ui.event.Synchronize;
+
+import elemental.json.JsonObject;
 
 /**
  * <p>
@@ -38,8 +40,7 @@ import com.vaadin.ui.common.HasComponents;
  * </p>
  */
 @Generated({"Generator: com.vaadin.generator.ComponentGenerator#1.0-SNAPSHOT",
-		"WebComponent: Vaadin.DropdownElement#3.0.0-alpha7",
-		"Flow#1.0-SNAPSHOT"})
+		"WebComponent: Vaadin.DropdownElement#3.0.0", "Flow#1.0-SNAPSHOT"})
 @Tag("vaadin-combo-box-dropdown")
 @HtmlImport("frontend://bower_components/vaadin-combo-box/vaadin-combo-box-dropdown.html")
 public class GeneratedVaadinComboBoxDropdown<R extends GeneratedVaadinComboBoxDropdown<R>>
@@ -49,7 +50,7 @@ public class GeneratedVaadinComboBoxDropdown<R extends GeneratedVaadinComboBoxDr
 	/**
 	 * This property is synchronized automatically from client side when a
 	 * 'opened-changed' event happens.
-	 * 
+	 *
 	 * @return the {@code opened} property from the webcomponent
 	 */
 	@Synchronize(property = "opened", value = "opened-changed")
@@ -68,7 +69,7 @@ public class GeneratedVaadinComboBoxDropdown<R extends GeneratedVaadinComboBoxDr
 	/**
 	 * This property is synchronized automatically from client side when a
 	 * 'template-changed' event happens.
-	 * 
+	 *
 	 * @return the {@code template} property from the webcomponent
 	 */
 	@Synchronize(property = "template", value = "template-changed")
@@ -94,7 +95,7 @@ public class GeneratedVaadinComboBoxDropdown<R extends GeneratedVaadinComboBoxDr
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code touchDevice} property from the webcomponent
 	 */
 	public boolean isTouchDevice() {
@@ -108,7 +109,7 @@ public class GeneratedVaadinComboBoxDropdown<R extends GeneratedVaadinComboBoxDr
 	 * <p>
 	 * True if the device supports touch events.
 	 * </p>
-	 * 
+	 *
 	 * @param touchDevice
 	 *            the boolean value to set
 	 */
@@ -126,7 +127,7 @@ public class GeneratedVaadinComboBoxDropdown<R extends GeneratedVaadinComboBoxDr
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code positionTarget} property from the webcomponent
 	 */
 	protected JsonObject protectedGetPositionTarget() {
@@ -140,7 +141,7 @@ public class GeneratedVaadinComboBoxDropdown<R extends GeneratedVaadinComboBoxDr
 	 * <p>
 	 * The element to position/align the dropdown by.
 	 * </p>
-	 * 
+	 *
 	 * @param positionTarget
 	 *            the JsonObject value to set
 	 */
@@ -158,7 +159,7 @@ public class GeneratedVaadinComboBoxDropdown<R extends GeneratedVaadinComboBoxDr
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code verticalOffset} property from the webcomponent
 	 */
 	public double getVerticalOffset() {
@@ -172,7 +173,7 @@ public class GeneratedVaadinComboBoxDropdown<R extends GeneratedVaadinComboBoxDr
 	 * <p>
 	 * Vertical offset for the overlay position.
 	 * </p>
-	 * 
+	 *
 	 * @param verticalOffset
 	 *            the double value to set
 	 */
@@ -190,7 +191,7 @@ public class GeneratedVaadinComboBoxDropdown<R extends GeneratedVaadinComboBoxDr
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code alignedAbove} property from the webcomponent
 	 */
 	public boolean isAlignedAbove() {
@@ -204,7 +205,7 @@ public class GeneratedVaadinComboBoxDropdown<R extends GeneratedVaadinComboBoxDr
 	 * <p>
 	 * If {@code true}, overlay is aligned above the {@code positionTarget}
 	 * </p>
-	 * 
+	 *
 	 * @param alignedAbove
 	 *            the boolean value to set
 	 */
@@ -278,7 +279,7 @@ public class GeneratedVaadinComboBoxDropdown<R extends GeneratedVaadinComboBoxDr
 
 	/**
 	 * Adds the given components as children of this component.
-	 * 
+	 *
 	 * @param components
 	 *            the components to add
 	 * @see HasComponents#add(Component...)

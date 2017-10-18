@@ -1,12 +1,12 @@
 /*
  * Copyright 2000-2017 Vaadin Ltd.
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
  * the License at
- * 
+ *
  * http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
@@ -15,24 +15,27 @@
  */
 package com.vaadin.ui.combobox;
 
-import com.vaadin.ui.Component;
-import com.vaadin.ui.common.ComponentSupplier;
-import com.vaadin.ui.common.HasStyle;
-import javax.annotation.Generated;
-import com.vaadin.ui.Tag;
-import com.vaadin.ui.common.HtmlImport;
-import elemental.json.JsonArray;
-import com.vaadin.ui.event.Synchronize;
-import com.vaadin.ui.common.HasValue;
 import java.util.Objects;
-import elemental.json.JsonObject;
+
+import javax.annotation.Generated;
+
+import com.vaadin.shared.Registration;
+import com.vaadin.ui.Component;
+import com.vaadin.ui.Tag;
+import com.vaadin.ui.common.ComponentSupplier;
+import com.vaadin.ui.common.HasComponents;
+import com.vaadin.ui.common.HasStyle;
+import com.vaadin.ui.common.HasValue;
+import com.vaadin.ui.common.HtmlImport;
 import com.vaadin.ui.common.NotSupported;
-import com.vaadin.ui.event.DomEvent;
 import com.vaadin.ui.event.ComponentEvent;
 import com.vaadin.ui.event.ComponentEventListener;
-import com.vaadin.shared.Registration;
+import com.vaadin.ui.event.DomEvent;
 import com.vaadin.ui.event.EventData;
-import com.vaadin.ui.common.HasComponents;
+import com.vaadin.ui.event.Synchronize;
+
+import elemental.json.JsonArray;
+import elemental.json.JsonObject;
 
 /**
  * <p>
@@ -76,8 +79,7 @@ import com.vaadin.ui.common.HasComponents;
  * </p>
  */
 @Generated({"Generator: com.vaadin.generator.ComponentGenerator#1.0-SNAPSHOT",
-		"WebComponent: Vaadin.ComboBoxLightElement#3.0.0-alpha7",
-		"Flow#1.0-SNAPSHOT"})
+		"WebComponent: Vaadin.ComboBoxLightElement#3.0.0", "Flow#1.0-SNAPSHOT"})
 @Tag("vaadin-combo-box-light")
 @HtmlImport("frontend://bower_components/vaadin-combo-box/vaadin-combo-box-light.html")
 public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight<R>>
@@ -99,7 +101,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code opened} property from the webcomponent
 	 */
 	public boolean isOpened() {
@@ -113,7 +115,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * <p>
 	 * True if the dropdown is open, false otherwise.
 	 * </p>
-	 * 
+	 *
 	 * @param opened
 	 *            the boolean value to set
 	 */
@@ -131,7 +133,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code disabled} property from the webcomponent
 	 */
 	public boolean isDisabled() {
@@ -145,7 +147,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * <p>
 	 * Set to true to disable this element.
 	 * </p>
-	 * 
+	 *
 	 * @param disabled
 	 *            the boolean value to set
 	 */
@@ -163,7 +165,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code readonly} property from the webcomponent
 	 */
 	public boolean isReadonly() {
@@ -177,7 +179,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * <p>
 	 * When present, it specifies that the element field is read-only.
 	 * </p>
-	 * 
+	 *
 	 * @param readonly
 	 *            the boolean value to set
 	 */
@@ -196,7 +198,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code items} property from the webcomponent
 	 */
 	protected JsonArray protectedGetItems() {
@@ -211,7 +213,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * A full set of items to filter the visible options from. The items can be
 	 * of either {@code String} or {@code Object} type.
 	 * </p>
-	 * 
+	 *
 	 * @param items
 	 *            the JsonArray value to set
 	 */
@@ -232,7 +234,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code allowCustomValue} property from the webcomponent
 	 */
 	public boolean isAllowCustomValue() {
@@ -249,7 +251,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * case. Also, when {@code value} is set programmatically, the input value
 	 * will be set to reflect that value.
 	 * </p>
-	 * 
+	 *
 	 * @param allowCustomValue
 	 *            the boolean value to set
 	 */
@@ -269,7 +271,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code filteredItems} property from the webcomponent
 	 */
 	protected JsonArray protectedGetFilteredItems() {
@@ -285,7 +287,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * be assigned directly to omit the internal filtering functionality. The
 	 * items can be of either {@code String} or {@code Object} type.
 	 * </p>
-	 * 
+	 *
 	 * @param filteredItems
 	 *            the JsonArray value to set
 	 */
@@ -311,7 +313,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * This property is synchronized automatically from client side when a
 	 * 'value-changed' event happens.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code value} property from the webcomponent
 	 */
 	@Synchronize(property = "value", value = "value-changed")
@@ -335,7 +337,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * Use {@code selectedItem} property to get the raw selected item from the
 	 * {@code items} array.
 	 * </p>
-	 * 
+	 *
 	 * @param value
 	 *            the String value to set
 	 */
@@ -357,7 +359,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code hasValue} property from the webcomponent
 	 */
 	public boolean hasValue() {
@@ -369,13 +371,13 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * Description copied from corresponding location in WebComponent:
 	 * </p>
 	 * <p>
-	 * When set to {@code true}, a loading spinner is displayed on top of the
-	 * list of options.
+	 * When set to {@code true}, &quot;loading&quot; attibute is added to host
+	 * and the overlay element.
 	 * <p>
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code loading} property from the webcomponent
 	 */
 	public boolean isLoading() {
@@ -387,10 +389,10 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * Description copied from corresponding location in WebComponent:
 	 * </p>
 	 * <p>
-	 * When set to {@code true}, a loading spinner is displayed on top of the
-	 * list of options.
+	 * When set to {@code true}, &quot;loading&quot; attibute is added to host
+	 * and the overlay element.
 	 * </p>
-	 * 
+	 *
 	 * @param loading
 	 *            the boolean value to set
 	 */
@@ -408,7 +410,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code filter} property from the webcomponent
 	 */
 	public String getFilter() {
@@ -422,7 +424,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * <p>
 	 * Filtering string the user has typed into the input field.
 	 * </p>
-	 * 
+	 *
 	 * @param filter
 	 *            the String value to set
 	 */
@@ -440,7 +442,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code selectedItem} property from the webcomponent
 	 */
 	protected JsonObject protectedGetSelectedItem() {
@@ -454,7 +456,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * <p>
 	 * The selected item from the {@code items} array.
 	 * </p>
-	 * 
+	 *
 	 * @param selectedItem
 	 *            the JsonObject value to set
 	 */
@@ -483,7 +485,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code itemLabelPath} property from the webcomponent
 	 */
 	public String getItemLabelPath() {
@@ -508,7 +510,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * used for filtering, and for displaying the selected item value in the
 	 * input box.
 	 * </p>
-	 * 
+	 *
 	 * @param itemLabelPath
 	 *            the String value to set
 	 */
@@ -533,7 +535,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code itemValuePath} property from the webcomponent
 	 */
 	public String getItemValuePath() {
@@ -553,7 +555,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * The item value is used in the {@code value} property of the combo box, to
 	 * provide the form value.
 	 * </p>
-	 * 
+	 *
 	 * @param itemValuePath
 	 *            the String value to set
 	 */
@@ -572,7 +574,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code required} property from the webcomponent
 	 */
 	public boolean isRequired() {
@@ -586,7 +588,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * <p>
 	 * Set to true to mark the input as required.
 	 * </p>
-	 * 
+	 *
 	 * @param required
 	 *            the boolean value to set
 	 */
@@ -604,7 +606,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code name} property from the webcomponent
 	 */
 	public String getName() {
@@ -618,7 +620,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * <p>
 	 * The name of this element.
 	 * </p>
-	 * 
+	 *
 	 * @param name
 	 *            the String value to set
 	 */
@@ -636,7 +638,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code invalid} property from the webcomponent
 	 */
 	public boolean isInvalid() {
@@ -650,7 +652,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * <p>
 	 * Set to true if the value is invalid.
 	 * </p>
-	 * 
+	 *
 	 * @param invalid
 	 *            the boolean value to set
 	 */
@@ -669,7 +671,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code attrForValue} property from the webcomponent
 	 */
 	public String getAttrForValue() {
@@ -684,7 +686,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * Name of the two-way data-bindable property representing the value of the
 	 * custom input field.
 	 * </p>
-	 * 
+	 *
 	 * @param attrForValue
 	 *            the String value to set
 	 */
@@ -704,7 +706,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code overlayVerticalOffset} property from the webcomponent
 	 */
 	public double getOverlayVerticalOffset() {
@@ -719,7 +721,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * Number of pixels used as the vertical offset in positioning of the
 	 * dropdown.
 	 * </p>
-	 * 
+	 *
 	 * @param overlayVerticalOffset
 	 *            the double value to set
 	 */
@@ -731,7 +733,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	/**
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
-	 * 
+	 *
 	 * @return the {@code inputElement} property from the webcomponent
 	 */
 	protected JsonObject protectedGetInputElement() {
@@ -786,7 +788,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * This function is not supported by Flow because it returns a
 	 * <code>boolean</code>. Functions with return types different than void are
 	 * not supported at this moment.
-	 * 
+	 *
 	 * @param value
 	 *            Missing documentation!
 	 */
@@ -805,7 +807,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 	 * <p>
 	 * You can override the {@code checkValidity} method for custom validations.
 	 * </p>
-	 * 
+	 *
 	 * @param value
 	 *            Missing documentation!
 	 */
@@ -884,7 +886,7 @@ public class GeneratedVaadinComboBoxLight<R extends GeneratedVaadinComboBoxLight
 
 	/**
 	 * Adds the given components as children of this component.
-	 * 
+	 *
 	 * @param components
 	 *            the components to add
 	 * @see HasComponents#add(Component...)

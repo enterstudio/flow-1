@@ -1,12 +1,12 @@
 /*
  * Copyright 2000-2017 Vaadin Ltd.
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
  * the License at
- * 
+ *
  * http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
@@ -15,20 +15,22 @@
  */
 package com.vaadin.ui.dialog;
 
+import javax.annotation.Generated;
+
+import com.vaadin.shared.Registration;
 import com.vaadin.ui.Component;
+import com.vaadin.ui.Tag;
 import com.vaadin.ui.common.ComponentSupplier;
 import com.vaadin.ui.common.HasStyle;
-import javax.annotation.Generated;
-import com.vaadin.ui.Tag;
 import com.vaadin.ui.common.HtmlImport;
-import com.vaadin.ui.event.Synchronize;
-import elemental.json.JsonObject;
-import elemental.json.JsonArray;
 import com.vaadin.ui.common.NotSupported;
-import com.vaadin.ui.event.DomEvent;
 import com.vaadin.ui.event.ComponentEvent;
 import com.vaadin.ui.event.ComponentEventListener;
-import com.vaadin.shared.Registration;
+import com.vaadin.ui.event.DomEvent;
+import com.vaadin.ui.event.Synchronize;
+
+import elemental.json.JsonArray;
+import elemental.json.JsonObject;
 
 /**
  * <p>
@@ -72,7 +74,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * This property is synchronized automatically from client side when a
 	 * 'opened-changed' event happens.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code opened} property from the webcomponent
 	 */
 	@Synchronize(property = "opened", value = "opened-changed")
@@ -87,7 +89,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * <p>
 	 * True if the overlay is currently displayed.
 	 * </p>
-	 * 
+	 *
 	 * @param opened
 	 *            the boolean value to set
 	 */
@@ -105,7 +107,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code noCloseOnOutsideClick} property from the webcomponent
 	 */
 	public boolean isNoCloseOnOutsideClick() {
@@ -119,7 +121,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * <p>
 	 * Set to true to disable closing dialog on outside click
 	 * </p>
-	 * 
+	 *
 	 * @param noCloseOnOutsideClick
 	 *            the boolean value to set
 	 */
@@ -138,7 +140,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * This property is not synchronized automatically from the client side, so
 	 * the returned value may not be the same as in client side.
 	 * </p>
-	 * 
+	 *
 	 * @return the {@code noCloseOnEsc} property from the webcomponent
 	 */
 	public boolean isNoCloseOnEsc() {
@@ -152,7 +154,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * <p>
 	 * Set to true to disable closing dialog on Escape press
 	 * </p>
-	 * 
+	 *
 	 * @param noCloseOnEsc
 	 *            the boolean value to set
 	 */
@@ -172,7 +174,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * Property names must be simple properties, not paths. Batched path
 	 * propagation is not supported.
 	 * </p>
-	 * 
+	 *
 	 * @param props
 	 *            Bag of one or more key-value pairs whose key is a property and
 	 *            value is the new value to set for that property.
@@ -194,7 +196,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * Aliases one data path as another, such that path notifications from one
 	 * are routed to the other.
 	 * </p>
-	 * 
+	 *
 	 * @param to
 	 *            Target path to link.
 	 * @param from
@@ -212,25 +214,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * Aliases one data path as another, such that path notifications from one
 	 * are routed to the other.
 	 * </p>
-	 * 
-	 * @param to
-	 *            Target path to link.
-	 * @param from
-	 *            Source path to link.
-	 */
-	public void linkPaths(java.lang.String to, java.lang.String from) {
-		getElement().callFunction("linkPaths", to, from);
-	}
-
-	/**
-	 * <p>
-	 * Description copied from corresponding location in WebComponent:
-	 * </p>
-	 * <p>
-	 * Aliases one data path as another, such that path notifications from one
-	 * are routed to the other.
-	 * </p>
-	 * 
+	 *
 	 * @param to
 	 *            Target path to link.
 	 * @param from
@@ -249,7 +233,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * Aliases one data path as another, such that path notifications from one
 	 * are routed to the other.
 	 * </p>
-	 * 
+	 *
 	 * @param to
 	 *            Target path to link.
 	 * @param from
@@ -264,17 +248,35 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * Description copied from corresponding location in WebComponent:
 	 * </p>
 	 * <p>
+	 * Aliases one data path as another, such that path notifications from one
+	 * are routed to the other.
+	 * </p>
+	 *
+	 * @param to
+	 *            Target path to link.
+	 * @param from
+	 *            Source path to link.
+	 */
+	public void linkPaths(java.lang.String to, java.lang.String from) {
+		getElement().callFunction("linkPaths", to, from);
+	}
+
+	/**
+	 * <p>
+	 * Description copied from corresponding location in WebComponent:
+	 * </p>
+	 * <p>
 	 * Removes a data path alias previously established with {@code _linkPaths}.
 	 * </p>
 	 * <p>
 	 * Note, the path to unlink should be the target ({@code to}) used when
 	 * linking the paths.
 	 * </p>
-	 * 
+	 *
 	 * @param path
 	 *            Target path to unlink.
 	 */
-	public void unlinkPaths(java.lang.String path) {
+	protected void unlinkPaths(elemental.json.JsonObject path) {
 		getElement().callFunction("unlinkPaths", path);
 	}
 
@@ -289,11 +291,11 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * Note, the path to unlink should be the target ({@code to}) used when
 	 * linking the paths.
 	 * </p>
-	 * 
+	 *
 	 * @param path
 	 *            Target path to unlink.
 	 */
-	protected void unlinkPaths(elemental.json.JsonObject path) {
+	public void unlinkPaths(java.lang.String path) {
 		getElement().callFunction("unlinkPaths", path);
 	}
 
@@ -307,19 +309,19 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * <p>
 	 * Example:
 	 * </p>
-	 * 
+	 *
 	 * <pre>
 	 * <code>this.items = [ {name: 'Jim'}, {name: 'Todd'}, {name: 'Bill'} ];
 	 * 	...
 	 * 	this.items.splice(1, 1, {name: 'Sam'});
 	 * 	this.items.push({name: 'Bob'});
 	 * 	this.notifySplices('items', [
-	 * 	  { index: 1, removed: [{name: 'Todd'}], addedCount: 1, obect: this.items, type: 'splice' },
+	 * 	  { index: 1, removed: [{name: 'Todd'}], addedCount: 1, object: this.items, type: 'splice' },
 	 * 	  { index: 3, removed: [], addedCount: 1, object: this.items, type: 'splice'}
 	 * 	]);
 	 * 	</code>
 	 * </pre>
-	 * 
+	 *
 	 * @param path
 	 *            Path that should be notified.
 	 * @param splices
@@ -329,7 +331,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 *            array of items that were removed from this index addedCount:
 	 *            number of new items added at this index object: a reference to
 	 *            the array in question type: the string literal 'splice'
-	 * 
+	 *
 	 *            Note that splice records _must_ be normalized such that they
 	 *            are reported in index order (raw results from `Object.observe`
 	 *            are not ordered and must be normalized/merged before
@@ -355,7 +357,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * This function is not supported by Flow because it returns a
 	 * <code>elemental.json.JsonObject</code>. Functions with return types
 	 * different than void are not supported at this moment.
-	 * 
+	 *
 	 * @param path
 	 *            Path to the value to read. The path may be specified as a
 	 *            string (e.g. `foo.bar.baz`) or an array of path parts (e.g.
@@ -388,7 +390,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * This function is not supported by Flow because it returns a
 	 * <code>elemental.json.JsonObject</code>. Functions with return types
 	 * different than void are not supported at this moment.
-	 * 
+	 *
 	 * @param path
 	 *            Path to the value to read. The path may be specified as a
 	 *            string (e.g. `foo.bar.baz`) or an array of path parts (e.g.
@@ -417,7 +419,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * method does nothing (this method does not throw when dereferencing
 	 * undefined paths).
 	 * </p>
-	 * 
+	 *
 	 * @param path
 	 *            Path to the value to write. The path may be specified as a
 	 *            string (e.g. `'foo.bar.baz'`) or an array of path parts (e.g.
@@ -450,7 +452,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * method does nothing (this method does not throw when dereferencing
 	 * undefined paths).
 	 * </p>
-	 * 
+	 *
 	 * @param path
 	 *            Path to the value to write. The path may be specified as a
 	 *            string (e.g. `'foo.bar.baz'`) or an array of path parts (e.g.
@@ -489,7 +491,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * This function is not supported by Flow because it returns a
 	 * <code>double</code>. Functions with return types different than void are
 	 * not supported at this moment.
-	 * 
+	 *
 	 * @param path
 	 *            Path to array.
 	 * @param ...items Missing documentation!
@@ -518,7 +520,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * This function is not supported by Flow because it returns a
 	 * <code>double</code>. Functions with return types different than void are
 	 * not supported at this moment.
-	 * 
+	 *
 	 * @param path
 	 *            Path to array.
 	 * @param ...items Missing documentation!
@@ -546,12 +548,12 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * This function is not supported by Flow because it returns a
 	 * <code>elemental.json.JsonObject</code>. Functions with return types
 	 * different than void are not supported at this moment.
-	 * 
+	 *
 	 * @param path
 	 *            Path to array.
 	 */
 	@NotSupported
-	protected void pop(java.lang.String path) {
+	protected void pop(elemental.json.JsonObject path) {
 	}
 
 	/**
@@ -573,12 +575,12 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * This function is not supported by Flow because it returns a
 	 * <code>elemental.json.JsonObject</code>. Functions with return types
 	 * different than void are not supported at this moment.
-	 * 
+	 *
 	 * @param path
 	 *            Path to array.
 	 */
 	@NotSupported
-	protected void pop(elemental.json.JsonObject path) {
+	protected void pop(java.lang.String path) {
 	}
 
 	/**
@@ -601,7 +603,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * This function is not supported by Flow because it returns a
 	 * <code>elemental.json.JsonArray</code>. Functions with return types
 	 * different than void are not supported at this moment.
-	 * 
+	 *
 	 * @param path
 	 *            Path to array.
 	 * @param start
@@ -635,7 +637,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * This function is not supported by Flow because it returns a
 	 * <code>elemental.json.JsonArray</code>. Functions with return types
 	 * different than void are not supported at this moment.
-	 * 
+	 *
 	 * @param path
 	 *            Path to array.
 	 * @param start
@@ -668,12 +670,12 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * This function is not supported by Flow because it returns a
 	 * <code>elemental.json.JsonObject</code>. Functions with return types
 	 * different than void are not supported at this moment.
-	 * 
+	 *
 	 * @param path
 	 *            Path to array.
 	 */
 	@NotSupported
-	protected void shift(java.lang.String path) {
+	protected void shift(elemental.json.JsonObject path) {
 	}
 
 	/**
@@ -695,12 +697,12 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * This function is not supported by Flow because it returns a
 	 * <code>elemental.json.JsonObject</code>. Functions with return types
 	 * different than void are not supported at this moment.
-	 * 
+	 *
 	 * @param path
 	 *            Path to array.
 	 */
 	@NotSupported
-	protected void shift(elemental.json.JsonObject path) {
+	protected void shift(java.lang.String path) {
 	}
 
 	/**
@@ -722,7 +724,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * This function is not supported by Flow because it returns a
 	 * <code>double</code>. Functions with return types different than void are
 	 * not supported at this moment.
-	 * 
+	 *
 	 * @param path
 	 *            Path to array.
 	 * @param ...items Missing documentation!
@@ -751,7 +753,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * This function is not supported by Flow because it returns a
 	 * <code>double</code>. Functions with return types different than void are
 	 * not supported at this moment.
-	 * 
+	 *
 	 * @param path
 	 *            Path to array.
 	 * @param ...items Missing documentation!
@@ -771,13 +773,13 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * <p>
 	 * Example:
 	 * </p>
-	 * 
+	 *
 	 * <pre>
 	 * <code>this.item.user.name = 'Bob';
 	 * 	this.notifyPath('item.user.name');
 	 * 	</code>
 	 * </pre>
-	 * 
+	 *
 	 * @param path
 	 *            Path that should be notified.
 	 * @param value
@@ -808,7 +810,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * <p>
 	 * These properties are retained unless a value of {@code null} is set.
 	 * </p>
-	 * 
+	 *
 	 * @param properties
 	 *            Bag of custom property key/values to apply to this element.
 	 */
@@ -830,7 +832,7 @@ public class GeneratedVaadinDialog<R extends GeneratedVaadinDialog<R>>
 	 * This function is not supported by Flow because it returns a
 	 * <code>java.lang.String</code>. Functions with return types different than
 	 * void are not supported at this moment.
-	 * 
+	 *
 	 * @param url
 	 *            URL to resolve.
 	 * @param base
