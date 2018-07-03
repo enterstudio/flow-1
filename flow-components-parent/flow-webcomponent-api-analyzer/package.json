@@ -23,11 +23,14 @@
     "require-dir": "latest",
     "run-sequence": "latest",
     "stream-from-array": "latest",
-    "vinyl": "~1.1.1"
+    "vinyl": "~1.1.1",
+    "snyk": "^1.88.0"
   },
   "scripts": {
     "flow-webcomponent-api-analyzer": "bin/flow-webcomponent-api-analyzer.js",
-    "flow-components": "node bin/flow-webcomponent-api-analyzer.js --flow_components"
+    "flow-components": "node bin/flow-webcomponent-api-analyzer.js --flow_components",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "bin": {
     "flow-webcomponent-api-analyzer": "./bin/flow-webcomponent-api-analyzer.js"
@@ -40,5 +43,6 @@
     "webcomponents",
     "polymer",
     "flow"
-  ]
+  ],
+  "snyk": true
 }
