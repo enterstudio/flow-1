@@ -9,7 +9,7 @@
     "coa": "~1.0.1",
     "ejs": "~2.4.2",
     "fs-extra": "latest",
-    "gulp": "latest",
+    "gulp": "4.0.0",
     "gulp-bower": "latest",
     "gulp-filter": "latest",
     "gulp-ignore": "latest",
@@ -23,11 +23,14 @@
     "require-dir": "latest",
     "run-sequence": "latest",
     "stream-from-array": "latest",
-    "vinyl": "~1.1.1"
+    "vinyl": "~1.1.1",
+    "snyk": "^1.104.2"
   },
   "scripts": {
     "flow-webcomponent-api-analyzer": "bin/flow-webcomponent-api-analyzer.js",
-    "flow-components": "node bin/flow-webcomponent-api-analyzer.js --flow_components"
+    "flow-components": "node bin/flow-webcomponent-api-analyzer.js --flow_components",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "bin": {
     "flow-webcomponent-api-analyzer": "./bin/flow-webcomponent-api-analyzer.js"
@@ -40,5 +43,6 @@
     "webcomponents",
     "polymer",
     "flow"
-  ]
+  ],
+  "snyk": true
 }
