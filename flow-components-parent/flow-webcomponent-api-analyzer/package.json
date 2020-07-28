@@ -17,7 +17,7 @@
     "jsonfile": "~2.2.1",
     "lodash": "latest",
     "map-stream": "latest",
-    "marked": "latest",
+    "marked": "1.1.1",
     "minimist": "~1.1.1",
     "polymer-analyzer": "~2.2.1",
     "require-dir": "latest",
