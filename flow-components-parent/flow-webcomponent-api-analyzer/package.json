@@ -15,7 +15,7 @@
     "gulp-ignore": "latest",
     "gulp-rename": "latest",
     "jsonfile": "~2.2.1",
-    "lodash": "latest",
+    "lodash": "4.17.20",
     "map-stream": "latest",
     "marked": "latest",
     "minimist": "~1.1.1",
