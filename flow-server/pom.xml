@@ -47,7 +47,7 @@
         <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
-            <version>1.10.3</version>
+            <version>1.15.3</version>
         </dependency>
         <dependency>
             <groupId>com.helger</groupId>
@@ -115,7 +115,7 @@
 
                 <executions>
                     <execution>
-                        <id></id>
+                        <id/>
                         <goals>
                             <!-- Output -tests.jar so other modules can depend on the test classes -->
                             <goal>test-jar</goal>
@@ -154,7 +154,7 @@
                 <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
-                <test.excludegroup></test.excludegroup>
+                <test.excludegroup/>
             </properties>
         </profile>
     </profiles>
